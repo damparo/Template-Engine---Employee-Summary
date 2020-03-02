@@ -1,6 +1,7 @@
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
@@ -11,6 +12,24 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 ​
 ​
+
+console.log(new Manager("name", 1, "tucker@gmail.com", 883));
+console.log(new Engineer("name", 1, "tucker@gmail.com", "tuckerhub"));
+console.log(new Intern("name", 1, "tucker@gmail.com", "tuckerschol"));
+
+// const html = render ({
+//     (new Manager("name", 1, "tucker@gmail.com", 883)),
+//     (new Engineer("name", 1, "tucker@gmail.com", "tuckerhub")),
+//     (new Intern("name", 1, "tucker@gmail.com", "tuckerschol"))
+
+// });
+
+
+
+// fs.writeFile(outputPath, html, () => {});
+
+
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 ​
